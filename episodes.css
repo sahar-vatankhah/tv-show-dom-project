@@ -1,0 +1,23 @@
+
+#select {
+    display: flex;
+    width: 35vh;
+    border-radius: 50px;
+    margin-top: 2%;
+    background-color: #292a33;
+    color: white;
+    border-radius: 50px;
+    
+  }
+  
+    
+  
+    
+    .episode-card {
+      background-color: #2d2e37;
+      border: 0.5rem solid #1d1e29;
+    }
+    
+    .h-176 {
+      height: 176px !important;
+    }
