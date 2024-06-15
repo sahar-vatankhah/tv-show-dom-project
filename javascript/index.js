@@ -36,7 +36,7 @@ async function generateCard(movieId, parentEle) {
     
   
     cardContainer.addEventListener("click", () => {
-      window.location.href = `../html/episodes.html?id=${data.id}`;
+      window.location.href = `../page/episodes.html?id=${data.id}`;
     });
   }
    
