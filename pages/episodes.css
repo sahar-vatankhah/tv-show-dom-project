@@ -66,17 +66,7 @@ body h1{
   font-size: 0.5rem;
 }
 
-#search {
-  display: flex;
-  width: 40vh;
-  height: 2vw;
-  border-radius: 50px;
-  margin-top: 1%;
-  background-color: #2d2e37;
-  color: white;
-  text-decoration: none;
-  
-}
+
 
 #bi-play{
 
