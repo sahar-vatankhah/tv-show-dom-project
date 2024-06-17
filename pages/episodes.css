@@ -1,4 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body,
+header {
+  background-color: #1e1e20;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+.col-xs-6{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+ 
+}
+
+.tv{
+  color: green;
+ 
+}
+body h1{
+  color: white;
+
+}
+
+.right-inner-addon i {
+  position: absolute;
+  right: 19%;
+
+  margin-top: 4px;
+  color: white;
+  
+
+  
+}
+
+
+
+.side-nav {
+  font-family: "Playfair Display", serif;
+  top: 0;
+  left: 10px;
+  width: 60px; 
+  padding: 1rem 0; 
+  z-index: 1000; 
+}
+
+.side-nav a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; 
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  color: #198754 !important; 
+}
+
+
+.fs-7 {
+  font-size: 0.5rem;
+}
+
+#search {
+  display: flex;
+  width: 40vh;
+  height: 2vw;
+  border-radius: 50px;
+  margin-top: 1%;
+  background-color: #2d2e37;
+  color: white;
+  text-decoration: none;
+  
+}
+
+#bi-play{
+
+  position: absolute;
+   right: 14%;
+   top: 5%;
+  padding: 6px 5px;
+  margin-top: 2px;
+ 
+}
 #select {
     display: flex;
     width: 35vh;
@@ -20,4 +108,13 @@
     
     .h-176 {
       height: 176px !important;
+    }
+
+
+    footer a i {
+      color: #fff;
+      transition: color 0.5s;
+    }
+    footer a i:hover {
+      color: #198754 !important;
     }
