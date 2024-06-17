@@ -1,6 +1,6 @@
 const showId = new URLSearchParams(window.location.search).get("id");
 
-const cardsContainer = document.querySelector("main div.row");
+const cardsContainer = document.querySelector(".row");
 const dropDownMenu = document.querySelector("#select");
 
 
