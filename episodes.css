@@ -1,95 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-header {
-  background-color: #1e1e20;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7em;
-}
-
-.col-xs-6{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 45px;
- 
-}
-
-.tv{
-  color: green;
- 
-}
-body h1{
-  color: white;
-
-}
-
-.right-inner-addon i {
-  position: absolute;
-  right: 19%;
-
-  margin-top: 4px;
-  color: white;
-  
-
-  
-}
 
 
-
-.side-nav {
-  font-family: "Playfair Display", serif;
-  top: 0;
-  left: 10px;
-  width: 60px; 
-  padding: 1rem 0; 
-  z-index: 1000; 
-}
-
-.side-nav a {
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff; 
-  text-decoration: none;
-}
-
-.side-nav a:hover {
-  color: #198754 !important; 
-}
-
-
-.fs-7 {
-  font-size: 0.5rem;
-}
-
-
-
-#bi-play{
-
-  position: absolute;
-   right: 14%;
-   top: 5%;
-  padding: 6px 5px;
-  margin-top: 2px;
- 
-}
-#select {
-    display: flex;
-    width: 35vh;
-    border-radius: 50px;
-    margin-top: 2%;
-    background-color: #292a33;
-    color: white;
-    border-radius: 50px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     
-  }
-  
+    body,
+    header {
+      background-color: #1e1e20;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7em;
+    }
     
-  
+    .col-xs-6 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 45px;
+    }
+    
+    .tv {
+      color: green;
+    }
+    
+    body h1 {
+      color: white;
+    }
+    
+    .right-inner-addon i {
+      position: absolute;
+      right: 19%;
+      margin-top: 4px;
+      color: white;
+    }
+    
+    .side-nav {
+      font-family: "Playfair Display", serif;
+      top: 0;
+      left: 10px;
+      width: 60px;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    
+    .side-nav a {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .side-nav a:hover {
+      color: #198754 !important;
+    }
+    
+    .fs-7 {
+      font-size: 0.5rem;
+    }
+    
+    #bi-play {
+      position: absolute;
+      right: 14%;
+      top: 5%;
+      padding: 6px 5px;
+      margin-top: 2px;
+    }
+    
+    #select {
+      display: flex;
+      width: 35vh;
+      border-radius: 50px;
+      margin-top: 2%;
+      background-color: #292a33;
+      color: white;
+      border-radius: 50px;
+    }
     
     .episode-card {
       background-color: #2d2e37;
@@ -99,12 +85,112 @@ body h1{
     .h-176 {
       height: 176px !important;
     }
-
-
+    
     footer a i {
       color: #fff;
       transition: color 0.5s;
     }
+    
     footer a i:hover {
       color: #198754 !important;
     }
+    
+   
+    @media screen and (max-width: 420px) {
+      .col-xs-6 {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #select {
+        width: 90%;
+      }
+
+      #bi-play {
+
+        right: 14%;
+        top: 16%;
+
+      }
+    
+      .side-nav {
+        display: none;
+      }
+    
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .episode-card {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media screen and (min-width: 420px) and (max-width: 768px) {
+      .col-xs-6 {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      #select {
+        width: 70%;
+      }
+
+      #bi-play {
+
+        right: 3%;
+        top: 8%;
+
+      }
+    
+      .side-nav {
+        width: 50px;
+      }
+    
+      .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    
+      .episode-card {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .col-xs-6 {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    
+      #select {
+        width: 70%;
+      }
+
+      #bi-play {
+     
+        /* right: 3%; */
+        top: 8%;
+    
+      }
+    
+      .side-nav {
+        width: 60px;
+      }
+    
+      .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    
+      .episode-card {
+        width: 30%;
+        margin-bottom: 20px;
+      }
+    }
+    

@@ -1,4 +1,4 @@
-async function generateCard(movieId, parentEle) {
+ const generateCard = async (movieId, parentEle) => {
     const res = await fetch(`https://api.tvmaze.com/shows/${movieId}`);
     const data = await res.json();
   

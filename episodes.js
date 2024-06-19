@@ -8,7 +8,7 @@ generateEpisode(showId);
 generateItems(showId);
 
 
-async function getEpisodesData(showId) {
+ const getEpisodesData = async(showId) => {
   try {
     const res = await fetch(`https://api.tvmaze.com/shows/${showId}/episodes`);
     return await res.json();
@@ -18,7 +18,7 @@ async function getEpisodesData(showId) {
 }
 
 
-async function generateItems(showId) {
+ const generateItems = async (showId) => {
   const episodesData = await getEpisodesData(showId);
 
   const allOption = document.createElement("option");
