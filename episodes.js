@@ -2,7 +2,7 @@
 
 const showId = new URLSearchParams(window.location.search).get("id");
 
-const cardsContainer = document.querySelector(".cards-container"); 
+const cardsContainer = document.querySelector("main div.row"); 
 const dropDownMenu = document.querySelector("#select");
 
 const getEpisodesData = async (showId) => {
