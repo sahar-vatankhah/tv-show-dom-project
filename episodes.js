@@ -128,7 +128,7 @@
 
 const showId = new URLSearchParams(window.location.search).get("id");
 
-const cardsContainer = document.querySelector(".cards-container"); // تغییر از ".row" به ".cards-container"
+const cardsContainer = document.querySelector(".cards-container"); 
 const dropDownMenu = document.querySelector("#select");
 
 const getEpisodesData = async (showId) => {
